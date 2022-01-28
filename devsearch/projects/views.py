@@ -34,5 +34,9 @@ def projects(request):
 #     return HttpResponse('SINGLE PROJECT' + ' ' + str(pk) )
 
 def project(request, pk):
-    
-    return render(request, 'projects/single-projects.html')
+    projectObj = None
+    for i in projectsList:
+        if i ['id'] == pk:
+            projectObj = i
+
+    return render(request, 'projects/single-projects.html', {'project': projectObj})
