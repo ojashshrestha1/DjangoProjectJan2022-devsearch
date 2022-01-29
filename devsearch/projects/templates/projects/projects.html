@@ -4,7 +4,7 @@
 
 {% block content %}
 
-<p>You are on {{pagex}} page </p>
+<!-- <p>You are on {{pagex}} page </p>
 
 
 {% if number > 10 %}
@@ -14,7 +14,7 @@
     <p>Number is exactly 10</p>
 {% else %}
     <p>Number is less than 10</p>
-{% endif %}
+{% endif %} -->
 
 <hr>
 
@@ -24,7 +24,7 @@
     {% for project in projects %}
         <!-- <li>Title: <a href="/project/{{project.id}} "> {{project.title}} </a> --- {{project.description}}</li> -->
 
-        <li>Title: <a href="{% url 'project' project.id %}"> {{project.title}} </a> --- {{project.description}}</li>
+        <li>Title: <a href="{% url 'project' project.id %}"> {{project.title}} </a> --- {{project.created}}</li>
     {% endfor %}
 </ul>
 
