@@ -2,3 +2,12 @@ superuser login credentials
 
 username: admin
 password: pass#000
+
+
+username: testuser1
+password: pass#111
+
+
+
+username: nonstaff1
+password: staffpass#111
