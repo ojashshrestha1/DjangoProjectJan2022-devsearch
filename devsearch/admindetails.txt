@@ -1,0 +1,4 @@
+superuser login credentials
+
+username: admin
+password: pass#000
