@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-lnerm8=%%y!r=j2*@1xh6mtw_86m@-vcq0)q8n2+9kqppzu5$2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
@@ -55,6 +55,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
    
     "whitenoise.middleware.WhiteNoiseMiddleware",
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
