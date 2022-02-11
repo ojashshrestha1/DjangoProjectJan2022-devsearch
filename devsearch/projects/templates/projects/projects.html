@@ -20,7 +20,7 @@
 
 <h1>Projects</h1>
 
-<table> 
+<!-- <table> 
     <tr>
         <th> ID </th>
         <th> Project </th>
@@ -46,6 +46,39 @@
     </tr>
     {% endfor %}
 
+</table> -->
+
+<table class="table"> 
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col"> ID </th>
+        <th scope="col"> Project </th>
+        <th scope="col"> +ve Votes </th>
+        <th scope="col"> Ratio </th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        
+    </tr>
+    </thead>
+
+    {% for project in projects %}
+    <tbody>
+    <tr>
+        <td> {{project.id}} </td>
+        <td> {{project.title}} </td>
+        <td> {{project.vote_total}} </td>
+      
+        <td> {{project.vote_ratio}}% </td>
+        <td> {{project.created}} </td>
+       <td><a href="{% url 'project' project.id %}"> View</a></td> 
+       <td><a href="{% url 'update-project' project.id %}"> Update </a></td> 
+       <td><a href="{% url 'delete-project' project.id %}"> Delete </a></td> 
+
+    </tr>
+    {% endfor %}
+</tbody>
 </table>
 
 <!-- <ul>
