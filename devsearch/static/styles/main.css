@@ -1,16 +1,28 @@
 h1{
 
-    color: #ef9273;
+    color: #c8d8e4;
+
+}
+
+h2{
+
+    color: #c8d8e4;
 
 }
 
 
 p{
-    color: #0d0d0d;
+    color: #f2f2f2;
 }
 
 
 body{
 
-    background-color: #fef9f8;
+    background-color: #2b6777;
+    color: #f2f2f2;
+   
+}
+
+a{
+    color: #52ab98;
 }
