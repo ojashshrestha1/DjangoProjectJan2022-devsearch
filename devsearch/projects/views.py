@@ -71,7 +71,7 @@ def createProject(request):
             return redirect('projects')
 
     context = {'form': form}
-    return render(request, "projects/project_form.html", context)
+    return render(request, "projects/project_form.html", contest)
  
 
 def updateProject(request, pk):
